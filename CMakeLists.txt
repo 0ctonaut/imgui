@@ -21,7 +21,7 @@ set(HEADERS
     backends/imgui_impl_glfw.h
 )
 
-add_library(imgui SHARED ${SOURCES} ${HEADERS})
+add_library(imgui STATIC ${SOURCES} ${HEADERS})
 target_include_directories(imgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(imgui PUBLIC glfw)
